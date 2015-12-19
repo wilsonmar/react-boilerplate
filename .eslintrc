@@ -3,13 +3,16 @@
     "env": {
       "browser": true,
       "node": true,
-      "mocha": true
+      "mocha": true,
+      "es6": true
     },
-  	"ecmaFeatures": {
-      	"forOf": true,
-      	"jsx": true,
-      	"es6": true
-  	},
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          	"jsx": true
+        },
+    },
   	"rules": {
   		"comma-dangle": 0,
   		"react/prop-types": 0

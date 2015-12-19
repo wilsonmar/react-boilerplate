@@ -9,10 +9,10 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 class HomePage extends Component {
-	render() {
-		const dispatch = this.props.dispatch;
-		const { projectName, ownerName } = this.props.data;
-		return (
+  render() {
+    const dispatch = this.props.dispatch;
+    const { projectName, ownerName } = this.props.data;
+    return (
 			<div>
 				<h1>Hello World!</h1>
         <h2>This is the demo for the <span className="home__text--red">{ projectName }</span> by <a href={'https://twitter.com/' + ownerName} >@{ ownerName }</a></h2>
@@ -25,7 +25,7 @@ class HomePage extends Component {
         <Link className="btn" to="/readme">Setup</Link>
 			</div>
 		);
-	}
+  }
 }
 
 // REDUX STUFF
